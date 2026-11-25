@@ -40,48 +40,33 @@ Simplemente escribimos en la línea de comandos: **deactivate**
 ## 6. Qué hacen los scripts?
 
 Script 1: 01_get-ticket.py.
-
-Método: POST.
-
-Endpoint: /ticket
-
-Descripción: Identifica con el controlador y devuelve el Token que usan las demás peticiones.
+- Método: POST.
+- Endpoint: /ticket
+- Descripción: Identifica con el controlador y devuelve el Token que usan las demás peticiones.
 
 
 Script 2: 02_get-network-device.py.
-
-Método: GET.
-
-Endpoint: /network-device.
-
-Descripción: Utiliza el token como header, el network controller responde con los dispositivos descubiertos en la red y son impresos en pantalla tal que, NOMBRE_DISPOSITIVO PLATAFORMA DIRECCION_IP.
+- Método: GET.
+- Endpoint: /network-device.
+- Descripción: Utiliza el token como header, el network controller responde con los dispositivos descubiertos en la red y son impresos en pantalla tal que, NOMBRE_DISPOSITIVO PLATAFORMA DIRECCION_IP.
 
 
 Script 3: 03_get-host.py.
-
-Método: GET.
-
-Endpoint: /host-
-
-Descripción: Imprime por pantalla todos los hosts de la red con el siguiente formato: NOMBRE_HOST IP_HOST MAC_HOST PUERTO/INTERFAZ.
+- Método: GET.
+- Endpoint: /host.
+- Descripción: Imprime por pantalla todos los hosts de la red con el siguiente formato: NOMBRE_HOST IP_HOST MAC_HOST PUERTO/INTERFAZ.
 
 
 Script 4: 04_tabulate.py.
-
-Método: GET/POST.
-
-Endpoints: /ticket - /host - /network-device.
-
-Descripción: Imprime en forma de tabla los Hosts con el siguiente formato: NOMBRE_HOST TIPO IP.
+- Método: GET/POST.
+- Endpoints: /ticket - /host - /network-device.
+- Descripción: Imprime en forma de tabla los Hosts con el siguiente formato: NOMBRE_HOST TIPO IP.
 
 
 Script 5: inventory_csv.py.
-
-Método: GET.
-
-Endpoints: /host - /network-device.
-
-Descripción: Lista hosts en red en un archivo CSV con el siguiente formato: TIPO IP_HOST MAC_HOST PLATAFORMA.
+- Método: GET.
+- Endpoints: /host - /network-device.
+- Descripción: Lista hosts en red en un archivo CSV con el siguiente formato: TIPO IP_HOST MAC_HOST PLATAFORMA.
 Este archivo está codificado en utf-8-sig.
 
 
