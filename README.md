@@ -66,7 +66,7 @@ Script 4: 04_tabulate.py.
 Script 5: inventory_csv.py.
 - Método: GET.
 - Endpoints: /host - /network-device.
-- Descripción: Lista hosts en red en un archivo CSV con el siguiente formato: TIPO IP_HOST MAC_HOST PLATAFORMA.
+- Descripción: Lista hosts y dispostivos en red en un archivo CSV con el siguiente formato: TIPO IP_HOST MAC_HOST PLATAFORMA.
 Este archivo está codificado en utf-8-sig. Tambien imprime por consola la cantidad de dispositivos y hosts en la red.
 
 
