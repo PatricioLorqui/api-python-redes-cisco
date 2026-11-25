@@ -72,5 +72,5 @@ Este archivo está codificado en utf-8-sig. Tambien imprime por consola la canti
 
 ## Antes de ejecutar los scripts
 
-- **Credenciales del controlador:** Las credenciales fueron cambiadas a `cisco` y la clave `cisco123`. Esto es necesario para los scripts `01_get-ticket.py` y `04_tabulate.py`.
+- **Credenciales del controlador:** Las credenciales fueron cambiadas a `admin` y la clave `cisco123!`. Esto es necesario para los scripts `01_get-ticket.py` y `04_tabulate.py`.
 - **Ticket (X-Auth-Token):** Para todos los scripts es necesario generar un token nuevo ya que este es específico de cada sesión.
